@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Resume</title>
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #4b5563;
+      --accent: #2563eb;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f3f4f6;
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--bg);
+      padding: 48px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    .title {
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+
+    .item-sub {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px 16px;
+    }
+
+    @media print {
+      body {
+        background: none;
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Your Name</h1>
+        <div class="title">Your Job Title</div>
+      </div>
+      <div class="contact">
+        <div>you@email.com</div>
+        <div>linkedin.com/in/yourname</div>
+        <div>github.com/yourname</div>
+        <div>City, Country</div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Brief professional summary highlighting your experience, strengths,
+        and what kind of roles you’re targeting.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Company Name</span>
+          <span>2022 – Present</span>
+        </div>
+        <div class="item-sub">Job Title · Location</div>
+        <ul>
+          <li>Key achievement or responsibility with impact.</li>
+          <li>Another strong, results-focused bullet.</li>
+          <li>Technologies, tools, or skills used.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span>Previous Company</span>
+          <span>2019 – 2022</span>
+        </div>
+        <div class="item-sub">Job Title · Location</div>
+        <ul>
+          <li>What you did and why it mattered.</li>
+          <li>Quantify results when possible.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <span>University Name</span>
+          <span>2015 – 2019</span>
+        </div>
+        <div class="item-sub">Degree · Field of Study</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>JavaScript</div>
+        <div>HTML & CSS</div>
+        <div>React</div>
+        <div>Node.js</div>
+        <div>SQL</div>
+        <div>Git</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
